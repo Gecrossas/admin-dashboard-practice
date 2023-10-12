@@ -33,5 +33,22 @@
 }
 
 .projects {
+    background-color: beige;
+    padding: 15px;
     grid-area: projects;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+}
+
+.projects .title {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.projects .project-card {
+    background-color: white;
+    grid-auto-flow: row;
+    border-left: 10px solid orange;
+    border-radius: 10px;
 }
