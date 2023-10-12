@@ -6,7 +6,7 @@ body {
 .container {
     display: grid;
     min-height: 100vh;
-    grid-template-areas: 
+    grid-template-areas:
         "l-sidebar header"
         "l-sidebar content";
     grid-template-columns: minmax(250px, 350px) 3fr;
@@ -64,10 +64,27 @@ button:hover {
     font-size: 2rem;
     display: grid;
     grid-auto-rows: max-content;
+    padding-top: 15px;;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.material-symbols-outlined.logo {
+    font-size: 48px;
+    padding-right: 5px;
 }
 
 .l-sidebar ul {
     list-style: none;
+}
+
+.l-sidebar ul li span {
+    padding-right: 15px;
 }
 
 .content {
