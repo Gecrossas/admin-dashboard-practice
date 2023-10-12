@@ -79,8 +79,20 @@ button:hover {
     padding-right: 5px;
 }
 
+.material-symbols-outlined.button {
+    font-size: 2rem;
+}
+
 .l-sidebar ul {
     list-style: none;
+    display: grid;
+    grid-auto-rows: max-content;
+}
+
+.l-sidebar ul li {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .l-sidebar ul li span {
