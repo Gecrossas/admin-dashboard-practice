@@ -26,6 +26,13 @@ body {
     justify-content: space-between;
 }
 
+.bottom .right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-content: center;
+}
+
 input[type="search"] {
     width: 40vw;
     min-width: 200px;
@@ -33,6 +40,21 @@ input[type="search"] {
     background-color: whitesmoke;
     border: 0px;
     height: 36px;
+}
+
+button {
+    color: white;
+    background-color: cadetblue;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    min-width: 8rem;
+}
+
+button:hover {
+    text-decoration: underline;
 }
 
 .l-sidebar {
