@@ -1,14 +1,15 @@
-/* .wrapper {
-    display: flex;
-    justify-content: center;
-} */
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .container {
     display: grid;
+    min-height: 100vh;
     grid-template-areas: 
         "l-sidebar header   header"
         "l-sidebar projects r-sidebar";
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
 }
 
 .header {
@@ -17,6 +18,14 @@
 
 .l-sidebar {
     grid-area: l-sidebar;
+    background-color: cadetblue;
+    color: aliceblue;
+    font-size: 2rem;
+    display: grid;
+}
+
+.l-sidebar ul {
+    list-style: none;
 }
 
 .r-sidebar {
