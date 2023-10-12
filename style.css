@@ -6,17 +6,21 @@
 .container {
     display: grid;
     grid-template-areas: 
-        "sidebar header"
-        "sidebar projects";
-    grid-template-columns: 1fr 4fr;
+        "l-sidebar header   header"
+        "l-sidebar projects r-sidebar";
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 .header {
     grid-area: header;
 }
 
-.sidebar {
-    grid-area: sidebar;
+.l-sidebar {
+    grid-area: l-sidebar;
+}
+
+.r-sidebar {
+    grid-area: r-sidebar;
 }
 
 .projects {
